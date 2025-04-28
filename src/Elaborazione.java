@@ -1,11 +1,13 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Elaborazione
 {
-    public void Lettura()
+    public void Modifica()
     {
+        ArrayList<Dati> lista;
         String next;
         double media=0;
         double percentuale=0;
@@ -16,9 +18,9 @@ public class Elaborazione
             next=".";
             while((next= br.readLine())!=null)
             {
-                String[]dati=next.split(";");
-                regione=dati[1];
-                percentuale=Double.parseDouble(dati[2]);
+                String[]campi=next.split(";");
+                regione=campi[1];
+                percentuale=Double.parseDouble(campi[2]);
                 sommaPercent+=percentuale;
             }
 
