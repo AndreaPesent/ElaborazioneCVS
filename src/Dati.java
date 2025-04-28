@@ -33,4 +33,5 @@ public class Dati
     {
         this.percentuale = percentuale;
     }
+
 }
