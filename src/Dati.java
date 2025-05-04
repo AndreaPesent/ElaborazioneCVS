@@ -33,5 +33,8 @@ public class Dati
     {
         this.percentuale = percentuale;
     }
-
+    public String toString()
+    {
+        return anno + ", " + regione + ", " + percentuale;
+    }
 }
